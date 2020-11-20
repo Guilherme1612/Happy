@@ -48,11 +48,11 @@ export class createOrphanages1602670052126 implements MigrationInterface {
                     default: false,
                 }
             ]
-        }))
+        }));
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('orphanages')
+        await queryRunner.dropTable('orphanages');
     }
 
 }
